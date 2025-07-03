@@ -5,6 +5,10 @@
 
 # === C++ / GCC / CLang / Make / CMake / Qt / Code::Blocks / CLion / Xcode ===
 
+# Ignorer tous les fichiers sans extension (typiquement les exécutables)
+[a-zA-Z0-9_-]*
+!*.*
+
 # Compiled object files, static and dynamic libs
 *.o
 *.obj
