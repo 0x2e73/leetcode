@@ -9,6 +9,8 @@
 [a-zA-Z0-9_-]*
 !*.*
 
+
+./vscode
 # Compiled object files, static and dynamic libs
 *.o
 *.obj
