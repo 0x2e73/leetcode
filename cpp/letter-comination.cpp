@@ -9,7 +9,11 @@ using namespace std;
 
 
 vector<string> LetterCombinations(const string& digits) {
-    unordered_map<char, std::string> dictionnary = {
+
+    if(digits.empty())
+        return {};
+
+    unordered_map<char, string> dictionnary = {
         {'2', "abc"}, 
         {'3', "def"}, 
         {'4', "ghi"},
@@ -26,8 +30,21 @@ vector<string> LetterCombinations(const string& digits) {
         for (char v : dictionnary[digits[0]]) {
             result.push_back(string(1, v));
         }
+        return result;
     }
-    return result;
+    else {
+        result = {""};
+        for(char d: digits){
+            vector<string> temp;
+            for(string combined: result){
+                for(char associatedLetter: dictionnary[d]){
+                    temp.push_back(combined + associatedLetter);
+                }
+            }
+            result = temp;
+        }
+        return result;
+    }
 }
 
 int main(int argc, char* argv[]) {
