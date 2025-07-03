@@ -27,7 +27,6 @@
                 {
                     if (!(i + 1 > digitLength))
                     {
-
                         var firstDigit = dictionnary.FirstOrDefault(x => x.Key == digits[i]);
                         var secondDigit = dictionnary.FirstOrDefault(x => x.Key == digits[i + 1]);
 
