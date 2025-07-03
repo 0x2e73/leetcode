@@ -3,6 +3,64 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# === C++ / GCC / CLang / Make / CMake / Qt / Code::Blocks / CLion / Xcode ===
+
+# Compiled object files, static and dynamic libs
+*.o
+*.obj
+*.so
+*.a
+*.lib
+*.dll
+*.exe
+*.out
+
+# Build folders
+/build/
+/bin/
+/debug/
+/release/
+/dist/
+/cmake-build-*/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+install_manifest.txt
+
+# Code::Blocks
+*.depend
+*.layout
+
+# Qt Creator
+*.pro.user*
+*.qbs.user*
+*.moc
+*.rcc
+*.qmlc
+*.jsc
+*.qrc.dep
+
+# CLion
+.idea/
+
+# Xcode
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata/
+
+# Misc
+*.log
+*.tmp
+*~
+
+# MacOS
+.DS_Store
+
+
 # User-specific files
 *.rsuser
 *.suo
