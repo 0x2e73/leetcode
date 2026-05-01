@@ -6,7 +6,7 @@
 # === C++ / GCC / CLang / Make / CMake / Qt / Code::Blocks / CLion / Xcode ===
 
 # Ignorer tous les fichiers sans extension (typiquement les exécutables)
-[a-zA-Z0-9_-]*
+
 !*.*
 
 
